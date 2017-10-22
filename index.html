@@ -16,9 +16,17 @@
       color: #818181;
   }
       
-#vancouver {
-      font-style: italic;
+#myName {
+    padding-top: 2% !important;
+    text-align: center;
       }
+      
+#header {
+    font-style: italic;
+    background-color: black;
+    opacity: 0.8;
+    height: 160px;
+  }
       
   h2 {
       font-size: 24px;
@@ -36,9 +44,13 @@
       margin-bottom: 30px;
   }  
   .jumbotron {
+      background-image: url("/img/IMG_0741.JPG");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;  
       background-color: #424242;
       color: #fff;
-      padding: 100px 25px;
+      padding: 100px 0px;
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
@@ -138,7 +150,7 @@
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
+      color: black !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -148,7 +160,7 @@
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #f4511e;
+      color: mediumpurple;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -210,9 +222,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT ME</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#services">EXPERIENCE</a></li>
+        <li><a href="#portfolio">SKILLS</a></li>
+        <li><a href="#pricing">SHOWCASE</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -220,17 +232,19 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>jarrett huang</h1> 
-  <p id = "vancouver">vancouver, canada</p> 
+    
+    <div id="header">
+  <h1 id="myName">Jarrett HUANG</h1> 
+        <p>vancouver, canada</p> 
+    </div>
 </div>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h2>About Me</h2><br>
+      <h4>Hi, my name is Jarrett.</p>
       <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
     <div class="col-sm-4">
@@ -245,33 +259,32 @@
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
     </div>
     <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h2>ALL ABOUT ME</h2><br>
+      <h4><strong>YES:</strong> blah blah blah.</h4><br>
+      <p><strong>NO:</strong> valar morghulis!.</p>
     </div>
   </div>
 </div>
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
+  <h2>Skills</h2>
+  <h4>What I know and love to do</h4>
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
+      <h4>A</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
+      <h4>B</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
+      <h4>C</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
@@ -279,17 +292,17 @@
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
+      <h4>D</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
+      <h4>E</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
+      <h4 style="color:#303030;">F</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
@@ -297,8 +310,8 @@
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
+  <h2>Showcase</h2><br>
+  <h4>Things I've worked on</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
@@ -323,25 +336,25 @@
     </div>
   </div><br>
   
-  <h2>What our customers say</h2>
+  <h2>What people say about me</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to=""></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+        <h4>"AWESOME"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
       </div>
       <div class="item">
         <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
       </div>
       <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+        <h4>"Faaaabulous"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
       </div>
     </div>
 
