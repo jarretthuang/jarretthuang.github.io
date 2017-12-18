@@ -9,7 +9,7 @@ body {
 #myName {
     text-align: center;
     opacity: 1 !important;
-    font-size: 12vmin;
+    font-size: 18vmin;
     font-weight: lighter;
     font-style: normal;
     font-family: 'Ubuntu', sans-serif;
@@ -20,7 +20,7 @@ body {
     font-style: italic;
     background-color: rgba(0,0,0,0.5);
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     display: inline-block;
     position: relative;
     float: left;
@@ -42,7 +42,7 @@ body {
 
 #quote {
     bottom: 5%;
-    font-size: 2.5vmin !important;
+    font-size: 3vmin !important;
     color: rgba(255,255,255,0.9) !important;
 }
 
@@ -262,7 +262,7 @@ body {
 }
 
 #madeBy {
-    color: #e0e0e0;
+    color: #bdbdbd;
     cursor: pointer;
     font-size: 10px;
 }
@@ -313,9 +313,8 @@ body {
 #headerUp {
     position: relative;
     width: 100%;
-    height: 40vh;
-    background-color: black;
-    opacity: 0.7;
+    height: 30vh;
+    background-color: rgba(0,0,0,0.6);
     display: inline-block;
     float: left;
 }
@@ -324,7 +323,7 @@ body {
     position: relative;
     height: 10vh;
     width: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
     display: inline-block;
     float: left;
 }
@@ -335,7 +334,7 @@ body {
 }
 
 #helloThere {
-    font-size: 5vmin;
+    font-size: 8vmin;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -420,6 +419,7 @@ body {
 
 .made-with-heart {
     font-size: 10px;
+    color: #bdbdbd;
 }
 
 
