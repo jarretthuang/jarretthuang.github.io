@@ -42,9 +42,9 @@
 <div class="headerContainer text-center"> 
     <div id="headerUp"></div>
     <div id="header" class="disable-select">
-        <p id="helloThere">Hey, I'm</p>
-        <h1 id="myName">Jarrett</h1>
-        <p id="quote">"Man does not live only in the empirical world.<br>We must seek the ephemeral, or why live?"<br>- Victor Frankenstein</h2>
+        <p id="helloThere"><span style="font-size: 8vmin;">H</span><span style="font-size: 6vmin;">EY, </span><span style="font-size: 8vmin;">I</span><span style="font-size: 6vmin;">'M</span></p>
+        <h1 class="jhuang"><span style="font-size: 15vmin;">J</span><span style="font-size: 10vmin;">ARRETT</span> <span style="font-size: 15vmin;">H</span><span style="font-size: 10vmin;">UANG</span></h1>
+        <p id="quote">DEVELOPER / DESIGNER / GAMER | <b>VANCOUVER</b> <img style="height: 35px;" src="img/maple_leaf.png"></p>
     </div>
     <div id="headerDown">
         <span class="glyphicon glyphicon-menu-down arrow-down arrow-icon"></span>
@@ -57,7 +57,7 @@
       <div class="col-sm-3"></div>
     <div class="col-sm-6">
       <h2 class="paragraph-title">About Me</h2><img id="headshot" src="img/IMG_0300.jpg"><h4></h4>
-      <h4 class="paragraph">Hi, my name is <b>Jarrett Huang</b>. I'm a software developer, front-end designer, singer, gamer, and student at the <a href="https://www.ubc.ca/">University of British Columbia</a>, Vancouver Canada. <img style="height: 20px;" src="img/maple_leaf.png"><br>-<br>Studying a combined major in <b>Business</b> and <b>Computer Science</b>(BUCS). Currently working as a <b>Software Developer Co-op</b> at the <a href="http://www.quartzimaging.com/">Quartz Imaging Corporation</a>. Interested in front-end technologies, graphic design, game development, mobile development, FinTech and more. Check my portfolio on <a href="https://www.linkedin.com/in/jarretthuang">LinkedIn</a>.<br>-<br>Looking forward to <b>Summer 2018</b> opportunities!</h4>
+      <h4 class="paragraph">Hi, my name is <b>Jarrett Huang</b>. I'm a software developer, front-end designer, singer, gamer, and student at the <a href="https://www.ubc.ca/">University of British Columbia</a>, where I study a combined major in <b>Business</b> and <b>Computer Science</b>(BUCS).<br>-<br>Check out my professional portfolio on <a href="https://www.linkedin.com/in/jarretthuang">LinkedIn</a>.<br>Looking forward to <b>2018 Summer</b> opportunities!</h4>
         <span class="hire-me">HIRE ME</a>
     </div>
       <div class="col-sm-3"></div>
@@ -102,8 +102,9 @@
 
 <footer id="footer" class="container-fluid text-center">
     <span class="glyphicon glyphicon-menu-up arrow-icon arrow-up"></span>
+    <h2></h2>
     <br>
-  <p id="madeBy">Made with <span class="glyphicon glyphicon-heart made-with-heart"></span>and many cups of Double-double.<br>© 2017 Jarrett Huang. All rights reserved.</p>
+  <p id="madeBy">MADE WITH <span class="glyphicon glyphicon-heart made-with-heart"></span><br>© 2018 JARRETT HUANG. ALL RIGHTS RESERVED.</p>
 </footer>
 
 <script>
@@ -130,12 +131,16 @@ $(document).ready(function(){
         scrollToElement($("#contact"));
     });
     
-    $("#header").mouseenter(function(){
-        $("#quote").fadeIn();
+    $(".arrow-down").mouseenter(function(){
+        $("#headerUp").css("background-color","rgba(0,0,0,0.4)");
+        $("#header").css("background-color","rgba(0,0,0,0.4)");
+        $("#headerDown").css("background-color","rgba(0,0,0,0.4)");
     });
     
-     $("#header").mouseleave(function(){
-        $("#quote").fadeOut();
+     $(".arrow-down").mouseleave(function(){
+        $("#headerUp").css("background-color","rgba(0,0,0,0.7)");
+        $("#header").css("background-color","rgba(0,0,0,0.7)");
+        $("#headerDown").css("background-color","rgba(0,0,0,0.7)");
     });
     
     

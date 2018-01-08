@@ -6,10 +6,10 @@ body {
       color: #818181;
 }
       
-#myName {
+
+.jhuang {
     text-align: center;
     opacity: 1 !important;
-    font-size: 18vmin;
     font-weight: lighter;
     font-style: normal;
     font-family: 'Ubuntu', sans-serif;
@@ -18,7 +18,7 @@ body {
       
 #header {
     font-style: italic;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     width: 100%;
     height: 60vh;
     display: inline-block;
@@ -26,14 +26,12 @@ body {
     float: left;
     padding: 20px;
     padding-top: 50px;
-    color:white;
+    color:azure;
     font-family: 'Ubuntu', sans-serif;
-    -webkit-transition-duration:0.5s;/* Safari */transition-duration:0.5s;
+    -webkit-transition-duration:0.4s;/* Safari */transition-duration:0.4s;
   }
 
-#header:hover {
-    background-color: rgba(0,0,0,0.4);
-}
+
 
 
 
@@ -43,7 +41,8 @@ body {
 #quote {
     bottom: 5%;
     font-size: 3vmin !important;
-    color: rgba(255,255,255,0.9) !important;
+    font-style: normal;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -265,6 +264,7 @@ body {
     color: #bdbdbd;
     cursor: pointer;
     font-size: 10px;
+    -webkit-transition-duration:0.4s;/* Safari */transition-duration:0.4s;
 }
 
 #madeBy:hover #made-with-heart{
@@ -272,7 +272,6 @@ body {
 }
 #madeBy:hover {
     color: white;
-    transition: all 0.3s ease;
 }
 
 #madeBy:hover .made-with-heart {
@@ -314,18 +313,20 @@ body {
     position: relative;
     width: 100%;
     height: 30vh;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.7);
     display: inline-block;
     float: left;
+    -webkit-transition-duration:0.8s;/* Safari */transition-duration:0.8s;
 }
 
 #headerDown {
     position: relative;
     height: 10vh;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     display: inline-block;
     float: left;
+    -webkit-transition-duration:0.5s;/* Safari */transition-duration:0.5s;
 }
 
 #headerDown a{
@@ -334,7 +335,6 @@ body {
 }
 
 #helloThere {
-    font-size: 8vmin;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -352,10 +352,10 @@ body {
 }
 
 .arrow-icon:hover {
-    border: 2px solid #78909c;
-    box-shadow: 0 0 15px #78909c;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 0 15px #fafafa;
     transition: all 0.3s ease;
-    color:#78909c;
+    color:#e0e0e0;
 }
 
 .spinner {
@@ -378,13 +378,7 @@ body {
     font-family: 'Ubuntu', sans-serif !important;
 }
 
-#quote {
-    display: none;
-    font-size: 2vmin;
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    
-}
+
 
 .hire-me {
   border: 2px black solid;
@@ -433,3 +427,5 @@ body {
 #contact {
     background-color: #eeeeee;
 }
+
+
