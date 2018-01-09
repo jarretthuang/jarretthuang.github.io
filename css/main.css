@@ -349,6 +349,7 @@ body {
     cursor: pointer;
     border-radius: 50%;
     border: white 2px solid;
+    z-index: 101;
 }
 
 .arrow-icon:hover {
@@ -429,3 +430,11 @@ body {
 }
 
 
+
+#particles-js {
+    position:absolute;
+    z-index: 100;
+    top:0;
+    height: 100%;
+    width: 100%;
+}

@@ -11,12 +11,12 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/particles.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -40,6 +40,7 @@
 </nav>
 
 <div class="headerContainer text-center"> 
+    <div id="particles-js"></div>
     <div id="headerUp"></div>
     <div id="header" class="disable-select">
         <p id="helloThere"><span style="font-size: 8vmin;">H</span><span style="font-size: 6vmin;">EY, </span><span style="font-size: 8vmin;">I</span><span style="font-size: 6vmin;">'M</span></p>
@@ -107,81 +108,8 @@
   <p id="madeBy">MADE WITH <span class="glyphicon glyphicon-heart made-with-heart"></span><br>© 2018 JARRETT HUANG. ALL RIGHTS RESERVED.</p>
 </footer>
 
-<script>
-$(document).ready(function(){
-    function scrollToElement(el) {
-        var selectorName = "#" + $(el).attr("id");
-        $('html, body').animate({
-        scrollTop: $(el).offset().top
-      }, 900, function(){
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = selectorName;
-      });
-    }
-    
-    $(".arrow-down").click(function(){
-        scrollToElement($("#about"));
-    });
-    
-    $(".arrow-up").click(function(){
-        scrollToElement($("#home"));
-    });
-    
-    $(".hire-me").click(function(){
-        scrollToElement($("#contact"));
-    });
-    
-    $(".arrow-down").mouseenter(function(){
-        $("#headerUp").css("background-color","rgba(0,0,0,0.4)");
-        $("#header").css("background-color","rgba(0,0,0,0.4)");
-        $("#headerDown").css("background-color","rgba(0,0,0,0.4)");
-    });
-    
-     $(".arrow-down").mouseleave(function(){
-        $("#headerUp").css("background-color","rgba(0,0,0,0.7)");
-        $("#header").css("background-color","rgba(0,0,0,0.7)");
-        $("#headerDown").css("background-color","rgba(0,0,0,0.7)");
-    });
-    
-    
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#home']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-    
-    $('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
-    });
-})
-</script>
+<script src="js/main.js"></script>
 
 </body>
+    
 </html>
