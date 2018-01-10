@@ -1,4 +1,4 @@
- <style>
+
 body {
       font: 400 15px;
       font-family: 'Ubuntu', sans-serif;
@@ -74,6 +74,7 @@ body {
       color: #fff;
       position: relative;
       overflow: visible;
+      z-index: 10;
   }
   .container-fluid {
       padding: 60px 50px;
@@ -371,16 +372,16 @@ body {
 }
 
 
-#about {
-    background-color: white;
-}
+
 
 .paragraph {
     font-family: 'Lato', sans-serif !important;
+    font-size: 4.5vmin;
 }
 
 .paragraph-title {
     font-family: 'Ubuntu', sans-serif !important;
+    font-size: 6vmin;
 }
 
 
@@ -445,19 +446,25 @@ body {
 
 .section {
     width: 100vw;
-    height: 200vh;
+    height: 160vh;
     background-color: #f3f3f3;
+    z-index: 1;
+    position: relative;
 }
 
 .white-space {
     width: 100vw;
     height: 80vh;
+    z-index: 2;
+    position: relative;
 }
 
 .floating-content {
     width: 100vw;
     height: 80vh;
-    background-color: yellow;
+    background-color: white;
+    z-index: 3;
+    position: relative;
 }
 
 .sticky-content {
@@ -465,21 +472,38 @@ body {
     height:100vh;
     position: fixed;
     top:0;
-    background-color: coral;
 }
+
+
+
+
 
 .content-container {
     height: 60vh;
     width: 80vw;
-    margin: 0 auto;
-    background-color: red;
-    border: 5px red solid;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    overflow: show;
 }
 
-.content-container-top {
-    height:20vh;
-    width: 100vh;
-    color:green;
-    margin: 0 auto;
-    
+.social-icon {
+    height: 10vmin;
+    width: 10vmin;
+}
+.social-icon:hover {
+    filter:drop-shadow(1px 1px 1px black);
+}
+
+@media (orientation:landscape) {
+    .hide-on-landscape {
+        display: none;
+    }
+}
+
+@media (orientation:portrait) {
+    .hide-on-portrait {
+        display: none;
+    }
 }
