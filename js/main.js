@@ -5,6 +5,12 @@ $(document).ready(function(){
   console.log('callback - particles.js config loaded');
 });
 
+    $(document).scroll(function(){
+        var s = $(this).scrollTop();
+        var o = Math.min(1,s/100);
+        $("#quote").css("opacity",o);
+        $("#helloThere").css("opacity",1-o);
+    });
     
     function scrollToElement(el) {
         var selectorName = "#" + $(el).attr("id");
@@ -30,13 +36,13 @@ $(document).ready(function(){
     
     $(".arrow-down").mouseenter(function(){
         //$("#headerUp").css("background-color","rgba(0,0,0,0.4)");
-        $("#header").css("background-color","rgba(0,0,0,0.4)");
+        //$("#header").css("background-color","rgba(0,0,0,0.5)");
         //$("#headerDown").css("background-color","rgba(0,0,0,0.4)");
     });
     
      $(".arrow-down").mouseleave(function(){
         //$("#headerUp").css("background-color","rgba(0,0,0,0.7)");
-        $("#header").css("background-color","rgba(0,0,0,0.7)");
+        //$("#header").css("background-color","rgba(0,0,0,0.7)");
         //$("#headerDown").css("background-color","rgba(0,0,0,0.7)");
     });
     
