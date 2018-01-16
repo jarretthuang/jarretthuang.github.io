@@ -377,9 +377,11 @@ body {
 
 
 
-.paragraph {
-    font-family: 'Lato', sans-serif !important;
-    font-size: 4.5vmin;
+.xl {
+    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
 }
 
 .paragraph-title {
@@ -476,14 +478,15 @@ body {
 
 
 
-.content-container {
+.floating-content-container {
     height: 60vh;
     width: 80vw;
-    margin-top: 25vh;
-    margin-bottom: 15vh;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
     margin-left: 10vw;
     margin-right: 10vw;
     overflow: show;
+    position: absolute;
 }
 
 .social-icon {
@@ -507,7 +510,6 @@ body {
 }
 
 #about-1 {
-    background-color: #f3f3f3;
     z-index: 29;
 }
 
@@ -517,7 +519,22 @@ body {
 
 #experience-1 {
     z-index: 28;
-    background-color: #212121;
 }
 
 
+
+.sticky-content-container {
+    height: 60vh;
+    width: 80vw;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    overflow: show;
+    position: absolute;
+}
+
+.center-align {
+    display: flex;
+    align-items: center;
+}
