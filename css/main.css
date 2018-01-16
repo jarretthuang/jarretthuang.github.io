@@ -74,7 +74,7 @@ body {
       color: #fff;
       position: relative;
       overflow: visible;
-      z-index: 10;
+      z-index: 100;
   }
   .container-fluid {
       padding: 60px 50px;
@@ -261,6 +261,8 @@ body {
 
 #footer {
     background-color: #212121;
+    opacity: 1 !important;
+    z-index: 100;
 }
 
 #madeBy {
@@ -268,6 +270,7 @@ body {
     cursor: pointer;
     font-size: 10px;
     -webkit-transition-duration:0.4s;/* Safari */transition-duration:0.4s;
+    z-index: 101;
 }
 
 #madeBy:hover #made-with-heart{
@@ -444,27 +447,21 @@ body {
     width: 100%;
 }
 
-.section {
-    width: 100vw;
-    height: 160vh;
-    background-color: #f3f3f3;
-    z-index: 1;
-    position: relative;
-}
+
 
 .white-space {
     width: 100vw;
     height: 80vh;
-    z-index: 2;
     position: relative;
 }
 
 .floating-content {
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     background-color: white;
-    z-index: 3;
     position: relative;
+    color:black;
+    z-index: 30;
 }
 
 .sticky-content {
@@ -472,6 +469,7 @@ body {
     height:100vh;
     position: fixed;
     top:0;
+    background-color: #f3f3f3;
 }
 
 
@@ -507,3 +505,19 @@ body {
         display: none;
     }
 }
+
+#about-1 {
+    background-color: #f3f3f3;
+    z-index: 29;
+}
+
+
+
+
+
+#experience-1 {
+    z-index: 28;
+    background-color: #212121;
+}
+
+

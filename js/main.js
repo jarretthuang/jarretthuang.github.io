@@ -10,7 +10,16 @@ $(document).ready(function(){
         var o = Math.min(1,s/100);
         $("#quote").css("opacity",o);
         $("#helloThere").css("opacity",1-o);
+        stickyContentHelper(s);
     });
+    
+    function stickyContentHelper(cursor){
+        $(".sticky-content").show();
+        if (cursor >= $("#about-2").offset().top) {
+            $("#about-1").hide();
+        }
+        
+    }
     
     function scrollToElement(el) {
         var selectorName = "#" + $(el).attr("id");
