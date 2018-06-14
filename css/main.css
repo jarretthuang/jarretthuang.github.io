@@ -66,7 +66,7 @@ body {
   }  
   .headerContainer {
       height:120vh;
-      background-image: url("/img/IMG_0741.JPG");
+      background-image: url("../img/IMG_0741.JPG");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;  
@@ -260,17 +260,18 @@ body {
 }
 
 #footer {
-    background-color: #212121;
+    background: #212121;
     opacity: 1 !important;
     z-index: 100;
+  border-top: 1px solid #ddd;
+    height: 50vh!important;
 }
 
 #madeBy {
     color: #bdbdbd;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 16px;
     -webkit-transition-duration:0.4s;/* Safari */transition-duration:0.4s;
-    z-index: 101;
 }
 
 #madeBy:hover #made-with-heart{
@@ -423,7 +424,7 @@ body {
 
 
 .made-with-heart {
-    font-size: 10px;
+    font-size: 18px;
     color: #bdbdbd;
 }
 
@@ -537,4 +538,15 @@ body {
 .center-align {
     display: flex;
     align-items: center;
+}
+#footer-1 {
+  z-index: 27;
+}
+
+#footer-content {
+  padding: 50px 0;
+  color: #999;
+  position: absolute;
+    bottom: 0;
+    width: 100%;
 }

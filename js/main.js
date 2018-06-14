@@ -19,6 +19,9 @@ $(document).ready(function(){
             $("#about-1").hide();
         }
         
+        if (cursor >= $("#experience-2").offset().top) {
+            $("#experience-1").hide();
+        }    
     }
     
     function scrollToElement(el) {
