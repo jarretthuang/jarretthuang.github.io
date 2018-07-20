@@ -308,9 +308,8 @@ body {
   font-weight: bold;
 }
 #header {
-  height: 300px;
+  height: 100vh;
   position: relative;
-  border-bottom: 1px solid #ddd;
 }
 #header:before,
 #header:after {

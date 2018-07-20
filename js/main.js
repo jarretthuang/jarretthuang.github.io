@@ -3,7 +3,14 @@
 $(document).ready(function(){
   particlesJS.load('particles-js', 'js/particles.json', function() {
   console.log('callback - particles.js config loaded');
+  shuffleBackgroundImage();
 });
+    
+    function shuffleBackgroundImage() {
+      var rand = Math.floor((Math.random() * 21) + 1);
+      var imgUrl = "url(../img/bg_" + rand + ".jpeg)";
+      $(".headerContainer").css('background-image', imgUrl);
+    }
 
     $(document).scroll(function(){
         var s = $(this).scrollTop();
