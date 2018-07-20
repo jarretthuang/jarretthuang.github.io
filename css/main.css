@@ -24,9 +24,6 @@ body {
     height: 100vh;
     position: absolute;
     float: left;
-    padding: 20px;
-    padding-top: 50px;
-    background-color: rgba(0,0,0,0.6);
     color:azure;
     font-family: 'Ubuntu', sans-serif;
     -webkit-transition-duration:0.4s;/* Safari */transition-duration:0.4s;
@@ -559,8 +556,13 @@ body {
 .headerDown {
     height: 20vh;
     width: 100%;
-    background-color: rgba(0,0,0,0.6);
     position: absolute;
     bottom: 0;
     border: none;
+}
+
+.headerWrapper {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
 }
