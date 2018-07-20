@@ -382,7 +382,7 @@ body {
 
 .xl {
     font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    font-size: 40px;
+    font-size: 5vmin;
     font-weight: 600;
     color: black;
 }
