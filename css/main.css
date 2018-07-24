@@ -4,6 +4,8 @@ body {
       font-family: 'Ubuntu', sans-serif;
       line-height: 1.8;
       color: #818181;
+    margin: 0;
+    overflow-x: hidden;
 }
       
 
