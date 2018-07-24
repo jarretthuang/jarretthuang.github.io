@@ -237,9 +237,10 @@ body {
 }
 
 #headshot {
-    width: 180px;
-    height: 180px;
+    width: 30vmin;
+    height: 30vmin;
     border-radius: 50%;
+    align-self: center;
 }
 
 #aboutMe {
@@ -531,12 +532,15 @@ body {
 .sticky-content-container {
     height: 60vh;
     width: 80vw;
-    margin-top: 25vh;
-    margin-bottom: 15vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     margin-left: 10vw;
     margin-right: 10vw;
     overflow: show;
     position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .center-align {
@@ -567,4 +571,24 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(0,0,0,0.6);
+}
+
+
+
+.avatar-item {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: auto min-content;
+    grid-gap: 2vmin;
+}
+
+.intro-item {
+    justify-self: center;
+    align-self: center;
+}
+
+.social-links {
+    align-self: center;
+    width: auto;
 }
