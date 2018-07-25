@@ -591,4 +591,14 @@ body {
 .social-links {
     align-self: center;
     width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.linked-in {
+    justify-self: end;
+}
+
+.github {
+    justify-self: start;
 }

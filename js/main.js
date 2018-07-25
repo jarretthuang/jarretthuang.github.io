@@ -18,6 +18,13 @@ $(document).ready(function(){
         $("#quote").css("opacity",o);
         $("#helloThere").css("opacity",1-o);
         stickyContentHelper(s);
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 20) {
+            $("#madeBy").css("color", "white");
+            $(".made-with-heart").css("color", "red");
+        } else {
+            $("#madeBy").css("color", "#bdbdbd");
+            $(".made-with-heart").css("color", "#bdbdbd");
+        }
     });
     
     function stickyContentHelper(cursor){
