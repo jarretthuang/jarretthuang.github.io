@@ -669,3 +669,7 @@ body {
     justify-self: center;
     align-self: center;
 }
+
+.auto-size-img {
+        height: 40vmin;
+}
