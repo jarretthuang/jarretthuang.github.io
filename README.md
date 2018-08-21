@@ -7,3 +7,7 @@ All works created by myself will have corresponding licenses. Please check them 
 
 All works I have referenced will be described in the "Thanks" page. If you are the owner of these creations and wish to remove them from my site, please feel free to contact me and I will do so.
 
+Hope you enjoy this site and find what you are looking for.
+
+Made with all the <3 from Vancouver Canada.
+
