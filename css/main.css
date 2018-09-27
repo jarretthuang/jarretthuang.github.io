@@ -266,7 +266,6 @@ body {
     background: #212121;
     opacity: 1 !important;
     z-index: 100;
-  border-top: 1px solid #ddd;
     height: 50vh!important;
 }
 
@@ -668,4 +667,17 @@ body {
 .grid-item-center-align {
     justify-self: center;
     align-self: center;
+}
+
+.auto-size-img {
+        height: 40vmin;
+}
+
+.thanks-link {
+    color: #bdbdbd;
+}
+
+.thanks-link:hover {
+    text-decoration: none;
+    color: #414141;
 }
