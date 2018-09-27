@@ -493,7 +493,7 @@ body {
     overflow: show;
     position: absolute;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+   grid-template-columns: 6fr minmax(10px, 1fr) 6fr;
     grid-template-rows: 1fr;
 }
 
@@ -541,7 +541,7 @@ body {
     overflow: show;
     position: absolute;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 6fr minmax(10px, 1fr) 6fr;
     grid-template-rows: 1fr;
 }
 
@@ -680,4 +680,21 @@ body {
 .thanks-link:hover {
     text-decoration: none;
     color: #414141;
+}
+
+.framed-img {
+    width: 40vw;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.img-within {
+    width: 40vmax;
+    transition-duration: 1s;
+    border-radius: 18px;
+}
+
+#just-love {
+    transition-duration: 0.5s;
 }

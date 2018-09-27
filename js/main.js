@@ -11,6 +11,10 @@ $(document).ready(function(){
       var imgUrl = "url(../img/bg_" + rand + ".jpeg)";
       $(".headerContainer").css('background-image', imgUrl);
     }
+    
+    $( window ).resize(function() {
+        $(".img-within").css("margin-top", 0);
+    });
 
     $(document).scroll(function(){
         var s = $(this).scrollTop();
@@ -25,9 +29,35 @@ $(document).ready(function(){
             $("#madeBy").css("color", "#bdbdbd");
             $(".made-with-heart").css("color", "#bdbdbd");
         }
+        justLoveAnimation();
+        imgWithinHelper(s);
     });
     
-    function stickyContentHelper(cursor){
+    function justLoveAnimation() {
+        var r = Math.floor(Math.random() * 255);
+        var topHeight = $(window).scrollTop();
+        var bottomHeight = $(window).scrollTop() + $(window).height();
+        var g = Math.floor(Math.random() * 255);
+        var justLoveOffset = $("#just-love").offset().top;
+        if (bottomHeight > justLoveOffset && justLoveOffset > topHeight) {
+            var b = Math.floor(Math.random() * 255);
+            var colourText = "rgba(" + r + "," + g + "," + b + ", 0.5)";
+            $("#just-love").css("color", colourText);
+        }
+    }
+    
+    function imgWithinHelper(cursor) {
+      $(".framed-img").each(function() {
+        var frameHeight = $(this).height();
+        var imgHeight = $(this).children(".img-within").height();
+        var heightDiff = imgHeight - frameHeight;
+        var offset = - (cursor % heightDiff);
+        var offsetText = offset + "px";
+        $(this).children(".img-within").css("margin-top", offsetText);
+      });
+    }
+    
+    function stickyContentHelper(cursor) {
         $(".sticky-content").show();
         if (cursor >= $("#about-2").offset().top) {
             $("#about-1").hide();
