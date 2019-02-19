@@ -3,16 +3,12 @@
 $(document).ready(function () {
   fetchBackgroundImage();
   particlesJS.load('particles-js', 'js/particles.json', function () {
-    console.log('callback - particles.js config loaded');
   });
 
   function fetchBackgroundImage() {
     const url = "https://api.unsplash.com/photos/random?client_id=1fa21d4e47e24ead0406ece175ecf8e21ec942fcb1fe5d1d1bbb3f9871d14b37&collections=4320080";
     $.getJSON(url, function (data) {
       const imgUrl = "url(" + data.urls.full + ")";
-      console.log("image fetched!");
-      console.log(data);
-      console.log(imgUrl);
       $(".headerContainer").css('background-image', imgUrl);
     });
   }
