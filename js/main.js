@@ -1,18 +1,28 @@
 
 
 $(document).ready(function () {
-  fetchBackgroundImage();
+  var currentBackgroundArtwork = {};
+  fetchBackgroundArtwork();
   particlesJS.load('particles-js', 'js/particles.json', function () {
   });
 
-  function fetchBackgroundImage() {
-    const url = "https://api.unsplash.com/photos/random?client_id=1fa21d4e47e24ead0406ece175ecf8e21ec942fcb1fe5d1d1bbb3f9871d14b37&collections=4320080";
+  function fetchBackgroundArtwork() {
+    const url = "https://api.unsplash.com/photos/random?client_id=4552f7da1d6a698026af528f224b170b50ab0da150e0b07e8d71bee7b1a88882&collections=4320080";
+//    const url = "abc";
     $.getJSON(url, function (data) {
+      currentBackgroundArtwork = data;
       const imgUrl = "url(" + data.urls.full + ")";
       $(".headerContainer").css('background-image', imgUrl);
+      updateArtworkCopyright();
     });
   }
 
+  function updateArtworkCopyright() {
+    const author = currentBackgroundArtwork.user.name;
+    const link = currentBackgroundArtwork.user.links.html;
+    $(".artwork-author").text(author);
+    $(".artwork-author").attr("href", link);
+  }
   $(window).resize(function () {
     $(".img-within").css("margin-top", 0);
   });

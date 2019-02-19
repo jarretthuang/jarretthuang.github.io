@@ -586,12 +586,14 @@ body {
     position: absolute;
     bottom: 0;
     border: none;
+    display: flex;
+    pointer-events: all;
 }
 
 .headerWrapper {
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.65);
 }
 
 
@@ -752,3 +754,13 @@ body {
 }
 
 
+
+.artwork-copyright {
+    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 10px;
+    color: lightgray;
+    align-self: flex-end;
+    margin: 10px;
+    z-index: 101;
+    cursor: pointer;
+}
