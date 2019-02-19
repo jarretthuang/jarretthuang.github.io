@@ -7,8 +7,7 @@ $(document).ready(function () {
   });
 
   function fetchBackgroundArtwork() {
-    const url = "https://api.unsplash.com/photos/random?client_id=4552f7da1d6a698026af528f224b170b50ab0da150e0b07e8d71bee7b1a88882&collections=4320080";
-//    const url = "abc";
+    const url = "https://api.unsplash.com/photos/random?client_id=1fa21d4e47e24ead0406ece175ecf8e21ec942fcb1fe5d1d1bbb3f9871d14b37&collections=4320080";
     $.getJSON(url, function (data) {
       currentBackgroundArtwork = data;
       const imgUrl = "url(" + data.urls.full + ")";
