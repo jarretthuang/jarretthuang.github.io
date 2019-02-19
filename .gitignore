@@ -1,0 +1,4 @@
+# See https://www.jetbrains.com/help/idea/managing-projects-under-version-control.html
+
+node_modules/
+.DS_Store
