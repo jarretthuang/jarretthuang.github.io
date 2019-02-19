@@ -68,7 +68,6 @@ body {
   }  
   .headerContainer {
       height:120vh;
-      background-image: url("../img/bg_4.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center; 
