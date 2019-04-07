@@ -3,7 +3,7 @@
 $(document).ready(function () {
   var currentBackgroundArtwork = {};
   fetchBackgroundArtwork();
-  particlesJS.load('particles-js', 'js/particles.json', function () {
+  particlesJS.load('particles-js', 'assets/js/particles.json', function () {
   });
 
   function fetchBackgroundArtwork() {
