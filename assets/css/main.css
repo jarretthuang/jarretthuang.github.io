@@ -758,9 +758,9 @@ body {
     cursor: pointer;
 }
 
-.youtube-video {
-    width: 30vw;
-    height: 17vw;
+.youtube-video-iframe {
+    width: 30vw!important;
+    height: 17vw!important;
 }
 
 
