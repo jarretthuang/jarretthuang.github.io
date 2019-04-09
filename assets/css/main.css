@@ -613,18 +613,11 @@ body {
 
 .social-links {
     align-self: center;
-    width: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
-.linked-in {
-    justify-self: end;
-}
 
-.github {
-    justify-self: start;
-}
+
+
 
 #new-1 {
     z-index: 27;
@@ -764,3 +757,10 @@ body {
     z-index: 101;
     cursor: pointer;
 }
+
+.youtube-video {
+    width: 30vw;
+    height: 17vw;
+}
+
+
