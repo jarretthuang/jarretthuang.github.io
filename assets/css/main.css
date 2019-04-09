@@ -756,6 +756,7 @@ body {
     margin: 10px;
     z-index: 101;
     cursor: pointer;
+    display: none;
 }
 
 .youtube-video-iframe {

@@ -13,6 +13,7 @@ $(document).ready(function () {
       const imgUrl = "url(" + data.urls.full + ")";
       $(".headerContainer").css('background-image', imgUrl);
       updateArtworkCopyright();
+      $(".artwork-copyright").show();
     });
   }
 
