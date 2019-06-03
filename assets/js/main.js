@@ -41,22 +41,8 @@ $(document).ready(function () {
       $("#footer").css("color", "#bdbdbd");
       $(".made-with-heart").css("color", "#bdbdbd");
     }
-    justLoveAnimation();
     imgWithinHelper(s);
   });
-
-  function justLoveAnimation() {
-    var r = Math.floor(Math.random() * 255);
-    var topHeight = $(window).scrollTop();
-    var bottomHeight = $(window).scrollTop() + $(window).height();
-    var g = Math.floor(Math.random() * 255);
-    var justLoveOffset = $("#just-love").offset().top;
-    if (bottomHeight > justLoveOffset && justLoveOffset > topHeight) {
-      var b = Math.floor(Math.random() * 255);
-      var colourText = "rgba(" + r + "," + g + "," + b + ", 0.5)";
-      $("#just-love").css("color", colourText);
-    }
-  }
 
   function imgWithinHelper(cursor) {
     $(".framed-img").each(function () {
